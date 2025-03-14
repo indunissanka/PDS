@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tai County Chemical CO., LTD.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Color Scheme */
+        :root {
+            --primary-background: #F3F7EC;
+            --secondary-background: #FFFFFF;
+            --primary-text: #005C78;
+            --secondary-text: #4A4947;
+            --accent-color: #E88D67;
+            --highlight-color: #006989;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: var(--primary-background);
+            color: var(--primary-text);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Navigation Menu Styles */
+        .nav-menu {
+            background-color: var(--primary-text);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            background-color: var(--highlight-color);
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            background-color: var(--accent-color);
+        }
+
+        .center-box {
+            width: 80%;
+            max-width: 1200px;
+            background-color: var(--secondary-background);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin: 30px auto;
+            padding: 30px;
+            position: relative;
+        }
+
+        .company-name {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 14px;
+            color: white;
+            background-color: var(--primary-text);
+            padding: 5px 10px;
+            border-radius: 8px;
+        }
+
+        header {
+            text-align: center;
+            padding: 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 600;
+            color: var(--primary-text);
+        }
+
+        p.intro {
+            font-size: 1.2em;
+            color: var(--highlight-color);
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        .content-section {
+            background-color: var(--secondary-background);
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 12px;
+            box-shadow: none;
+        }
+
+        h2 {
+            color: var(--highlight-color);
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        li {
+            flex: 1 1 calc(33.333% - 20px);
+            margin: 10px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--highlight-color);
+            font-weight: 600;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #f0f0f0;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        a:hover {
+            color: #fff;
+            background-color: var(--highlight-color);
+        }
+
+        .clear-button {
+            background-color: var(--accent-color);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .clear-button:hover {
+            background-color: #E17050;
+        }
+
+        footer {
+            background-color: var(--primary-text);
+            color: #fff;
+            text-align: center;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 30px auto 0;
+            width: 80%;
+            max-width: 1200px;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .center-box,
+            footer {
+                width: 95%;
+                margin: 15px auto;
+                padding: 20px;
+            }
+
+            ul {
+                display: block;
+            }
+
+            li {
+                margin-bottom: 20px;
+                flex: 1 1 100%;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Menu -->
+    <div class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="performance-polymer.html">Performance Polymer</a>
+    </div>
+
+    <div class="center-box">
+        <div class="company-name">Tai County Chemical CO., LTD.</div>
+        <header>
+            <h1>Tai County Chemical CO., LTD.</h1>
+            <p class="intro">No.91 Museum Road, Bali District, New Taipei City, Taiwan 24947</p>
+        </header>
+
+        <div class="content-section">
+            <p>TAI COUNTY CHEMICAL CO., LTD. is a leading company in the field of silicone products that can be applied
+                to various industrial fields such as textile, paint, rubber, chemical and cleaning.
+                The company has a highly innovative R&D team that provides clients with high quality and
+                environmentally friendly products.
+            </p>
+            <button class="clear-button">WhatsApp: <a href="https://wa.me/+886932891588">Mark Wu</a></button>
+        </div>
+
+        <div class="content-section">
+            <h2>Amino Softeners Emulsions:</h2>
+            <ul>
+                <li><a href="PDS/ECO-7010-ENPDS-20190814.pdf">ECO-7010</a></li>
+                <li><a href="PDS/MKS-ENPDS-20190815.pdf">MKS</a></li>
+                <li><a href="PDS/N-COOL30-ENPDS-20191018j.pdf">N-COOL</a></li>
+                <li><a href="PDS/ONE-TOUCH-ENPDS-20201126ja.pdf">ONE TOUCH</a></li>
+                <li><a href="PDS/SP-838H-ENPDS-20190816.pdf">SP-838H</a></li>
+                <li><a href="PDS/SP-810A-ENPDS-20190816.pdf">SP-810A</a></li>
+                <li><a href="PDS/SP-816F+-ENPDS-20211227.pdf">SP-816F+</a></li>
+                <li><a href="PDS/SP-813K-ENPDS-20190528j.pdf">SP-813K</a></li>
+            </ul>
+        </div>
+        <div class="content-section">
+            <h2>Non-Yellowing Softeners Emulsions:</h2>
+            <ul>
+                <li><a href="PDS/NP-910A-ENPDS-20190815.pdf">NP-910A</a></li>
+                <li><a href="PDS/NP-911B-ENPDS-20190815.pdf">NP-911B</a></li>
+                <li><a href="PDS/NP-912C-ENPDS-20190815.pdf">NP-912C</a></li>
+                <li><a href="PDS/NP-915E-ENPDS-20190815.pdf">NP-915E</a></li>
+            </ul>
+        </div>
+        <div class="content-section">
+            <h2>Block Copolymer (Block Silicone):</h2>
+            <ul>
+                <li><a href="PDS/RX-4088PT-ENPDS-20240913j.pdf">RX-4088PT</a></li>
+                <li><a href="PDS/RX-4088CC-ENPDS-20250123j.pdf">RX-4088CC</a></li>
+            </ul>
+            </ul>
+        </div>
+        <div class="content-section">
+            <h2>Amino Silicone Fluids:</h2>
+            <ul>
+                <li><a href="PDS/N-COOL-ENPDS-20191018j.pdf">N-COOL</a></li>
+                <li><a href="PDS/SS-8160+ENPDS-20211122.pdf">SS-8160+</a></li>
+                <li><a href="PDS/SS-8150+-ENPDS-20211227.pdf">SS-8150+</a></li>
+                <li><a href="PDS/SS-8100-ENPDS-201908168.pdf">SS-8100</a></li>
+                <li><a href="PDS/SS-8101-ENPDS-20221125m.pdf">SS-8101</a></li>
+                <li><a href="PDS/SS-8102-ENPDS-20190816.pdf">SS-8102</a></li>
+                <li><a href="PDS/SS-8380-ENPDS-20190819.pdf">SS-8380</a></li>
+                <li><a href="PDS/SS-8330-ENPDS-20190819.pdf">SS-8330</a></li>
+            </ul>
+        </div>
+        <div class="content-section">
+            <h2>Antifoaming Agent:</h2>
+            <ul>
+                <li><a href="PDS/SAS-120-ENPDS-20190816.pdf">SAS-120</a></li>
+                <li><a href="PDS/SAA-120-ENPDS-20190816.pdf">SAA-120</a></li>
+                <li><a href="PDS/SAH-120-ENPDS-20181025.pdf">SAH-120</a></li>
+                <li><a href="PDS/AT-120-ENPDS-20190814.pdf">AT-120</a></li>
+                <li><a href="PDS/SRD-335-ENPDS-20190816.pdf">SRD-335</a></li>
+                <li><a href="PDS/SRD-135-ENPDS-20190816.pdf">SRD-135</a></li>
+                <li><a href="PDS/AC-6-ENPDS-20190814.pdf">AC-6</a></li>
+                <li><a href="PDS/DSA-88-ENPDS-20190814.pdf">DSA-88</a></li>
+                <li><a href="PDS/SIP-8200-ENPDS-20230523.pdf">SIP-8200</a></li>
+                <li><a href="PDS/SAF-160-ENPDS-20240910j.pdf">SAF-160</a></li>
+                <li><a href="PDS/SAF-260-ENPDS-20240911j.pdf">SAF-260</a></li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Releasing Agents:</h2>
+            <ul>
+                <li><a href="PDS/SE-8700-ENPDS-20161216j.pdf">SE-8700</a></li>
+                <li><a href="PDS/SE-8730-ENPDS-20190816.pdf">SE-8730</a></li>
+                <li><a href="PDS/LE-803-ENPDS-20190815.pdf">LE-803</a></li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Polydimethylsiloxane (PDMS):</h2>
+            <ul>
+                <li><a href="PDS/ME-350-ENPDS-20240524j.pdf">ME-350</a></li>
+                <li><a href="PDS/ME-1000-ENPDS-20221201.pdf">ME-1000</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>Contact Us: Mark Wu</p>
+        <p>Tel: +886226104457#122 | WhatsApp: +886932891588</p>
+        <p>Email: mark.wu@taicounty.com.tw</p>
+        <p>No.91 Museum Road, Bali District, New Taipei City, Taiwan 24947</p>
+        <p>© 2024 Tai County Chemical CO., LTD. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
