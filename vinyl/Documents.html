@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Download Center - Silicone Product Datasheets</title>
+  <title>Silicone Material Combinations</title>
   <style>
     body {
       background-color: #f8f9fa;
@@ -12,6 +12,7 @@
       padding: 0;
     }
 
+    /* Navbar styles */
     .navbar {
       background-color: #2c3e50;
       color: #fff;
@@ -30,6 +31,12 @@
       margin: 0;
     }
 
+    .menu-icon {
+      display: none;
+      font-size: 1.6em;
+      cursor: pointer;
+    }
+
     .nav-links {
       display: flex;
       gap: 20px;
@@ -46,6 +53,36 @@
       color: #1abc9c;
     }
 
+    /* Responsive Nav */
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: block;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #2c3e50;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 20px 0;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    /* Page container */
     .container {
       background-color: #fff;
       margin: 40px auto;
@@ -55,43 +92,36 @@
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     }
 
-    h1, h2 {
+    h1, h2, h3 {
       color: #2c3e50;
     }
 
     h1 {
       font-size: 2em;
-      margin-bottom: 0.5em;
     }
 
     h2 {
-      font-size: 1.4em;
+      font-size: 1.5em;
       margin-top: 2em;
     }
 
+    h3 {
+      font-size: 1.2em;
+      margin-top: 1.5em;
+    }
+
     p {
+      font-size: 1em;
       color: #333;
       line-height: 1.6;
     }
 
-    .download-section {
-      margin-top: 2em;
+    ul {
+      padding-left: 20px;
     }
 
-    .download-links a {
-      display: block;
-      background-color: #2c3e50;
-      color: white;
-      padding: 12px 20px;
-      margin: 10px 0;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: background-color 0.3s ease;
-    }
-
-    .download-links a:hover {
-      background-color: #1abc9c;
+    ul li {
+      margin-bottom: 5px;
     }
 
     @media (max-width: 600px) {
@@ -105,25 +135,26 @@
       }
 
       h2 {
-        font-size: 1.2em;
+        font-size: 1.3em;
       }
 
-      .nav-links {
-        flex-direction: column;
-        align-items: flex-start;
+      h3 {
+        font-size: 1.1em;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- Navigation -->
   <nav class="navbar">
-    <h1>Silicone Series</h1>
-    <div class="nav-links">
+    <h1>Silicone Applications</h1>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
       <a href="https://pds.markwu.uk/vinyl/index.html">Home</a>
       <a href="https://pds.markwu.uk/vinyl/Methyl-Low-Hydrogen-Silicone-Fluid">Methyl Low Hydrogen</a>
       <a href="https://pds.markwu.uk/vinyl/Catalyst">Catalysts</a>
+      <a href="https://pds.markwu.uk/vinyl/Applications">Applications</a>
       <a href="https://pds.markwu.uk/vinyl/Documents">Documentation</a>
       <a href="https://pds.markwu.uk/vinyl/Contact">Contact</a>
     </div>
@@ -143,6 +174,10 @@
       </div>
     </div>
   </div>
-
+ <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
 </body>
 </html>
