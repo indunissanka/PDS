@@ -1,147 +1,119 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Silicone Material Combinations</title>
+  <title>Vinyl Silicone: Applications and Uses</title>
   <style>
     body {
       background-color: #f8f9fa;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
     }
 
-    /* Navbar styles */
+    /* Navigation styles */
     .navbar {
+      width: 100%;
       background-color: #2c3e50;
-      color: #fff;
-      padding: 15px 20px;
+      color: white;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+      box-sizing: border-box;
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
 
     .navbar h1 {
-      font-size: 1.2em;
+      font-size: 1.4em;
       margin: 0;
     }
 
     .menu-icon {
       display: none;
-      font-size: 1.6em;
+      font-size: 1.5em;
       cursor: pointer;
     }
 
     .nav-links {
       display: flex;
-      gap: 20px;
+      gap: 15px;
     }
 
     .nav-links a {
-      color: #fff;
+      color: white;
       text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s ease;
+      font-size: 1em;
     }
 
     .nav-links a:hover {
-      color: #1abc9c;
+      text-decoration: underline;
     }
 
-    /* Responsive Nav */
     @media (max-width: 768px) {
       .menu-icon {
         display: block;
       }
 
       .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #2c3e50;
         position: absolute;
         top: 60px;
-        left: 0;
-        right: 0;
-        background-color: #2c3e50;
-        flex-direction: column;
-        align-items: center;
-        display: none;
-        padding: 20px 0;
-      }
-
-      .nav-links.active {
-        display: flex;
+        right: 20px;
+        width: 200px;
+        border-radius: 8px;
+        padding: 10px;
       }
 
       .nav-links a {
         padding: 10px 0;
-        width: 100%;
-        text-align: center;
+      }
+
+      .nav-links.show {
+        display: flex;
       }
     }
 
-    /* Page container */
     .container {
       background-color: #fff;
-      margin: 40px auto;
+      margin: 40px 20px;
       padding: 40px;
       max-width: 900px;
+      width: 100%;
       border-radius: 12px;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     }
 
     h1, h2, h3 {
       color: #2c3e50;
+      margin-top: 1.5em;
     }
 
     h1 {
-      font-size: 2em;
+      font-size: 2.2em;
+      margin-top: 0;
     }
 
     h2 {
-      font-size: 1.5em;
-      margin-top: 2em;
+      font-size: 1.6em;
     }
 
     h3 {
       font-size: 1.2em;
-      margin-top: 1.5em;
+      margin-top: 1.2em;
     }
 
-    p {
-      font-size: 1em;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    ul li {
-      margin-bottom: 5px;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        padding: 20px;
-        margin: 20px;
-      }
-
-      h1 {
-        font-size: 1.6em;
-      }
-
-      h2 {
-        font-size: 1.3em;
-      }
-
-      h3 {
-        font-size: 1.1em;
-      }
-        p, ul, li {
+    p, ul, li {
       color: #333;
       font-size: 1em;
       line-height: 1.6;
@@ -172,17 +144,9 @@
       background-color: #f9f9f9;
     }
 
-    @media (max-width: 768px) {
-      .nav-links {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
-
     @media (max-width: 600px) {
       .container {
         padding: 20px;
-        margin: 20px;
       }
 
       h1 {
@@ -201,11 +165,15 @@
         font-size: 0.95em;
       }
     }
-    }
   </style>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("show");
+    }
+  </script>
 </head>
 <body>
-
   <!-- Navigation -->
   <nav class="navbar">
     <h1>Silicone Applications</h1>
@@ -219,10 +187,9 @@
       <a href="https://pds.markwu.uk/vinyl/Contact">Contact</a>
     </div>
   </nav>
-  <div class="container">
-    <h1>VL Series VL-100 ~ VL-15000000</h1>
 
-    <h2>Vinyl Silicone Fluid: Applications and Uses</h2>
+  <div class="container">
+    <h1>Vinyl Silicone: Applications and Uses</h1>
 
     <h2>Introduction</h2>
     <p>Vinyl silicone, a specialized form of silicone rubber, is widely used in industries requiring durable, flexible, and chemically resistant materials. Its unique properties—such as high thermal stability, excellent electrical insulation, and resistance to extreme environments—make it indispensable in medical, automotive, electronics, and industrial applications. This report explores the detailed applications of vinyl silicone, highlighting its versatility and advantages.</p>
@@ -295,10 +262,5 @@
     <h2>Conclusion</h2>
     <p>Vinyl silicone’s adaptability across industries stems from its unmatched durability, safety, and performance under stress. From life-saving medical devices to high-performance automotive parts, its applications continue to expand with advancements in material science. Future innovations may further enhance its role in sustainable and high-tech solutions.</p>
   </div>
-   <script>
-    function toggleMenu() {
-      document.getElementById("navLinks").classList.toggle("active");
-    }
-  </script>
 </body>
 </html>
