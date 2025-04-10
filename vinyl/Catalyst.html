@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Vinyl Composite Platinum Catalyst</title>
+  <title>Silicone Material Combinations</title>
   <style>
     body {
       background-color: #f8f9fa;
@@ -12,7 +12,77 @@
       padding: 0;
     }
 
-      
+    /* Navbar styles */
+    .navbar {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar h1 {
+      font-size: 1.2em;
+      margin: 0;
+    }
+
+    .menu-icon {
+      display: none;
+      font-size: 1.6em;
+      cursor: pointer;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #1abc9c;
+    }
+
+    /* Responsive Nav */
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: block;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #2c3e50;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 20px 0;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    /* Page container */
     .container {
       background-color: #fff;
       margin: 40px auto;
@@ -24,26 +94,25 @@
 
     h1, h2, h3 {
       color: #2c3e50;
-      margin-top: 1.5em;
     }
 
     h1 {
-      font-size: 2.2em;
-      margin-top: 0;
+      font-size: 2em;
     }
 
     h2 {
-      font-size: 1.6em;
+      font-size: 1.5em;
+      margin-top: 2em;
     }
 
     h3 {
       font-size: 1.2em;
-      margin-top: 1.2em;
+      margin-top: 1.5em;
     }
 
-    p, ul, li {
-      color: #333;
+    p {
       font-size: 1em;
+      color: #333;
       line-height: 1.6;
     }
 
@@ -51,32 +120,8 @@
       padding-left: 20px;
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-
-    th, td {
-      border: 1px solid #ddd;
-      padding: 10px;
-      text-align: left;
-    }
-
-    th {
-      background-color: #f0f0f0;
-      color: #333;
-    }
-
-    tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-
-    @media (max-width: 768px) {
-      .nav-links {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+    ul li {
+      margin-bottom: 5px;
     }
 
     @media (max-width: 600px) {
@@ -96,100 +141,24 @@
       h3 {
         font-size: 1.1em;
       }
-
-      p, li {
-        font-size: 0.95em;
-      }
     }
   </style>
 </head>
 <body>
 
-<!-- Navigation Bar -->
-<style>
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
-    color: white;
-    flex-wrap: wrap;
-  }
-
-  .navbar h1 {
-    font-size: 1.2rem;
-    margin: 0;
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 15px;
-  }
-
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    padding: 8px;
-  }
-
-  .nav-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-  }
-
-  .nav-toggle span {
-    background: white;
-    height: 3px;
-    margin: 4px 0;
-    width: 25px;
-  }
-
-  /* Mobile Styles */
-  @media (max-width: 768px) {
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-    }
-
-    .nav-links.active {
-      display: flex;
-      margin-top: 10px;
-    }
-
-    .nav-toggle {
-      display: flex;
-    }
-  }
-</style>
-
-<nav class="navbar">
-  <h1>Catalyst Applications</h1>
-
-  <div class="nav-toggle" onclick="toggleNav()">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-
-  <div class="nav-links" id="navLinks">
-    <a href="https://pds.markwu.uk/vinyl/index.html">Home</a>
-    <a href="https://pds.markwu.uk/vinyl/Methyl-Low-Hydrogen-Silicone-Fluid">Methyl Low Hydrogen</a>
-    <a href="https://pds.markwu.uk/vinyl/Catalyst">Catalysts</a>
-    <a href="https://pds.markwu.uk/vinyl/Applications">Applications</a>
-    <a href="https://pds.markwu.uk/vinyl/Documents">Documentation</a>
-    <a href="https://pds.markwu.uk/vinyl/Contact">Contact</a>
-  </div>
-</nav>
-
-<script>
-  function toggleNav() {
-    document.getElementById('navLinks').classList.toggle('active');
-  }
-</script>
-
+  <!-- Navigation -->
+  <nav class="navbar">
+    <h1>Silicone Applications</h1>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
+      <a href="https://pds.markwu.uk/vinyl/index.html">Home</a>
+      <a href="https://pds.markwu.uk/vinyl/Methyl-Low-Hydrogen-Silicone-Fluid">Methyl Low Hydrogen</a>
+      <a href="https://pds.markwu.uk/vinyl/Catalyst">Catalysts</a>
+      <a href="https://pds.markwu.uk/vinyl/Applications">Applications</a>
+      <a href="https://pds.markwu.uk/vinyl/Documents">Documentation</a>
+      <a href="https://pds.markwu.uk/vinyl/Contact">Contact</a>
+    </div>
+  </nav>
   <div class="container">
     <h1>Vinyl Composite Platinum Catalyst: Applications and Usage Details</h1>
 
