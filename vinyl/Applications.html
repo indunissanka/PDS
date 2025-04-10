@@ -46,6 +46,37 @@
       color: #1abc9c;
     }
 
+    .menu-icon {
+      display: none;
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        background-color: #2c3e50;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        display: none;
+        padding: 20px;
+      }
+
+      .nav-links a {
+        padding: 10px 0;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+    }
+
     .container {
       background-color: #fff;
       margin: 40px auto;
@@ -94,11 +125,6 @@
         margin: 20px;
       }
 
-      .nav-links {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
       h1 {
         font-size: 1.6em;
       }
@@ -118,11 +144,14 @@
   <!-- Navigation Bar -->
   <nav class="navbar">
     <h1>Silicone Applications</h1>
-    <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Products</a>
-      <a href="#">Downloads</a>
-      <a href="#">Contact</a>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
+      <a href="https://pds.markwu.uk/vinyl/index.html">Home</a>
+      <a href="https://pds.markwu.uk/vinyl/Methyl-Low-Hydrogen-Silicone-Fluid">Methyl Low Hydrogen</a>
+      <a href="https://pds.markwu.uk/vinyl/Catalyst">Catalysts</a>
+      <a href="https://pds.markwu.uk/vinyl/Applications">Applications</a>
+      <a href="https://pds.markwu.uk/vinyl/Documents">Documentation</a>
+      <a href="https://pds.markwu.uk/vinyl/Contact">Contact</a>
     </div>
   </nav>
 
@@ -198,6 +227,13 @@
     <h2>Conclusion</h2>
     <p>The combination of <strong>vinyl silicone fluid</strong>, <strong>methyl low hydrogen silicone fluid</strong>, and <strong>vinyl composite platinum catalyst</strong> unlocks a versatile range of silicone-based products, from durable rubbers to precision adhesives and coatings. These materials are indispensable in industries requiring high-performance elastomers, including automotive, medical, electronics, and construction. By leveraging these formulations, manufacturers can produce innovative solutions tailored to demanding environments.</p>
   </div>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
 
 </body>
 </html>
