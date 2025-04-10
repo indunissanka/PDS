@@ -152,7 +152,7 @@ tr:nth-child(even) {
   }
 
   .nav-links.active {
-    display: block !important;
+    display: flex !important;
   }
 
   .nav-links a {
