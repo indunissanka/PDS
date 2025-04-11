@@ -5,166 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Performance Polymer Technology</title>
-    <style>
-        /* Color Scheme */
-        :root {
-            --primary-background: #F3F7EC;
-            --secondary-background: #FFFFFF;
-            --primary-text: #005C78;
-            --secondary-text: #4A4947;
-            --accent-color: #E88D67;
-            --highlight-color: #006989;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            background-color: var(--primary-background);
-            color: var(--primary-text);
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        /* Navigation Menu Styles */
-        .nav-menu {
-            background-color: var(--primary-text);
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        .nav-menu a {
-            color: white;
-            text-decoration: none;
-            padding: 8px 15px;
-            border-radius: 5px;
-            background-color: var(--highlight-color);
-            transition: background-color 0.3s ease;
-        }
-
-        .nav-menu a:hover {
-            background-color: var(--accent-color);
-        }
-
-        .container {
-            width: 80%;
-            max-width: 1200px;
-            background: var(--secondary-background);
-            padding: 30px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-            border-radius: 12px;
-            position: relative;
-            margin: 30px auto;
-        }
-
-        .company-name {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            font-size: 14px;
-            color: white;
-            background-color: var(--primary-text);
-            padding: 5px 10px;
-            border-radius: 8px;
-        }
-
-        h1 {
-            color: var(--primary-text);
-            text-align: center;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            color: var(--highlight-color);
-            text-align: center;
-            font-weight: 600;
-            margin-bottom: 25px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 25px;
-        }
-
-        th,
-        td {
-            border: 1px solid #ddd;
-            padding: 15px;
-            text-align: left;
-            vertical-align: top;
-        }
-
-        th {
-            background-color: var(--accent-color);
-            color: #fff;
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        tr:hover {
-            background-color: #f2f2f2;
-        }
-
-        a {
-            color: var(--highlight-color);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            background-color: var(--primary-text);
-            color: #fff;
-            text-align: center;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 30px auto 0;
-            width: 80%;
-            max-width: 1200px;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
-        }
-
-        /* Media query for smaller screens */
-        @media (max-width: 768px) {
-
-            .container,
-            footer {
-                width: 95%;
-                margin: 15px auto;
-                padding: 20px;
-            }
-
-            th,
-            td {
-                padding: 12px;
-                font-size: 14px;
-            }
-        }
-    </style>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function createNav() {
+            const navHTML = `
+            <nav class="navbar">
+                <h1>Vinyl Silicone Series</h1>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>                    
+                    <a href="performance-polymer.html">Performance Polymer</a>
+                    <!--<a href="performance-polymer-technology.html">Performance Polymer Technology</a>
+                    <a href="Vinyl-Silicone.html">Vinyl Silicone</a>
+                    <a href="vmq.html">VMQ</a>-->
+                </div>
+            </nav>
+            `;
+            document.body.insertAdjacentHTML('afterbegin', navHTML);
+        }
+    </script>
 </head>
 
-<body>
-    <!-- Navigation Menu -->
-    <div class="nav-menu">
-        <a href="index.html">Home</a>
-        <a href="performance-polymer.html">Performance Polymer</a>
-    </div>
-
+<body onload="createNav()">
     <div class="container">
         <div class="company-name">Tai County Chemical CO., LTD.</div>
         <h1>Performance Polymer Technology</h1>
-        <h2>Product List &amp; Applications</h2>
+        <h2>Product List & Applications</h2>
         <table>
             <thead>
                 <tr>
@@ -206,7 +72,7 @@
                     <td>Polymer modification, reacts with silane groups for condensation reactions</td>
                 </tr>
                 <tr>
-                    <td><a href="PDS/CMQ-56-ENPDS.pdf" target="_blank">MQ Silicone Resin Series</a></td>
+                    <td><a href="CMQ-56-ENPDS.pdf" target="_blank">MQ Silicone Resin Series</a></td>
                     <td>Used in coatings, adhesives, and high-temperature applications</td>
                 </tr>
                 <tr>
@@ -217,8 +83,7 @@
                     <td>- Pigment stabilization in coatings<br>- Anti-settling agent in paints<br>- Used in silicone rubber adhesives, sealants, defoamers</td>
                 </tr>
                 <tr>
-                    <td>
-                        <a href="PDS/RX-4088-ENPDS.pdf" target="_blank">Block Copolymerized Hydrophilic Silicone Oil (RX-4088)</a>,
+                    <td><a href="PDS/RX-4088-ENPDS.pdf" target="_blank">Block Copolymerized Hydrophilic Silicone Oil (RX-4088)</a>,
                         <a href="PDS/RX-4088CC-ENPDS-20250123j.pdf" target="_blank">RX-4088CC</a>
                     </td>
                     <td>- Textile finishing agent<br>- Provides excellent hydrophilicity and moisture-wicking performance</td>
@@ -230,14 +95,14 @@
                 <tr>
                     <td>
                         <a href="PDS/SAF-160-ENPDS.pdf" target="_blank">Silicone-Modified Long-Lasting Defoamer (SAF-160)</a>,
-                        <a href="PDS/SAF-260-ENPDS.pdf" target="_blank">SAF-260</a>
+                        <a href="SAF-260-ENPDS.pdf" target="_blank">SAF-260</a>
                     </td>
-                    <td>Used in textile dyeing, printing, papermaking, electrolytes, coatings</td>
+                    <td>Used for heat conduction in electronics and industrial applications</td>
                 </tr>
                 <tr>
                     <td>
-                        <a href="PDS/RX-1345-ENPDS.pdf" target="_blank">Fatty Alcohol Modified Silicone Fluid (RX-1345)</a>,
-                        <a href="PDS/RS-45-ENPDS.pdf" target="_blank">RS-45</a>,
+                        <a href="RX-1345-ENPDS.pdf" target="_blank">Fatty Alcohol Modified Silicone Fluid (RX-1345)</a>,
+                        <a href="RS-45-ENPDS.pdf" target="_blank">RS-45</a>,
                         <a href="PDS/RS-25-ENPDS.pdf" target="_blank">RS-25</a>
                     </td>
                     <td>- Release agent for PU, rubber, and plastics<br>- Enhances leveling in inks and paints<br>- Provides softness and anti-static effects for fibers and leather</td>

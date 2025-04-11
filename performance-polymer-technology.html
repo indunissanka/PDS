@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Performance Polymer Technology</title>
-    <style>
-        body { font-family: 'Poppins', sans-serif; margin: 0; background-color: #f4f4f4; color: #333; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
-        .container { width: 80%; max-width: 1200px; background: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-radius: 8px; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
-        th { background-color: #ff7300; color: #fff; font-weight: 600; }
-        tr:nth-child(even) { background-color: #f2f2f2; }
-        tr:hover { background-color: #ddd; }
-        h1, h2 { color: #ff7300; text-align: center; font-weight: 700; }
-        footer { margin-top: 30px; padding: 20px; background-color: #333; color: #fff; text-align: center; border-radius: 8px; }
-        a { color: #ff7300; text-decoration: none; font-weight: 600; }
-        a:hover { text-decoration: underline; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        function createNav() {
+            const navHTML = `
+            <nav class="navbar">
+                <h1>Vinyl Silicone Series</h1>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="performance-polymer-technology.html">Performance Polymer Technology</a>
+                    <a href="performance-polymer.html">Performance Polymer</a>
+                    <a href="Vinyl-Silicone.html">Vinyl Silicone</a>
+                    <a href="vmq.html">VMQ</a>
+                </div>
+            </nav>
+            `;
+            document.body.insertAdjacentHTML('afterbegin', navHTML);
+        }
+    </script>
 </head>
-<body>
+<body onload="createNav()">
     <div class="container">
         <h1>Performance Polymer Technology</h1>
         <h2>Product List & Applications</h2>
@@ -65,15 +70,13 @@
                 <td>Used in coatings, adhesives, and high-temperature applications</td>
             </tr>
             <tr>
-                <td>
-                    <a href="SIP-8200-ENPDS.pdf" target="_blank">Hydrophobic Fumed Silica (SIP-8200)</a>,
+                <td><a href="SIP-8200-ENPDS.pdf" target="_blank">Hydrophobic Fumed Silica (SIP-8200)</a>,
                     <a href="SIP-2200-ENPDS.pdf" target="_blank">SIP-2200</a>
                 </td>
                 <td>- Pigment stabilization in coatings<br>- Anti-settling agent in paints<br>- Used in silicone rubber adhesives, sealants, defoamers</td>
             </tr>
             <tr>
-                <td>
-                    <a href="RX-4088-ENPDS.pdf" target="_blank">Block Copolymerized Hydrophilic Silicone Oil (RX-4088)</a>,
+                <td><a href="RX-4088-ENPDS.pdf" target="_blank">Block Copolymerized Hydrophilic Silicone Oil (RX-4088)</a>,
                     <a href="RX-4088CC-ENPDS-20250123j.pdf" target="_blank">RX-4088CC</a>
                 </td>
                 <td>- Textile finishing agent<br>- Provides excellent hydrophilicity and moisture-wicking performance</td>
@@ -87,7 +90,7 @@
                     <a href="SAF-160-ENPDS.pdf" target="_blank">Silicone-Modified Long-Lasting Defoamer (SAF-160)</a>,
                     <a href="SAF-260-ENPDS.pdf" target="_blank">SAF-260</a>
                 </td>
-                <td>Used in textile dyeing, printing, papermaking, electrolytes, coatings</td>
+                <td>Used for heat in textile dyeing, printing, papermaking, electrolytes, coatings</td>
             </tr>
             <tr>
                 <td>
@@ -104,7 +107,6 @@
             <p>Email: mark.wu@taicounty.com.tw</p>
             <p>No.91 Museum Road, Bali District, New Taipei City, Taiwan 24947</p>
             <p>&copy; 2024 Tai County Chemical CO., LTD. All Rights Reserved.</p>
-        </footer>
-    </div>
+    </footer>
 </body>
 </html>
