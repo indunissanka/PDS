@@ -1,0 +1,27 @@
+TAI COUNTY CHEMICAL - Product Datasheet (PDS) Links
+Source: https://taicounty.com.tw/categories/chemical-products/
+
+PT-10000 (Vinyl Composite Platinum Catalyst)
+  EN PDS: https://drive.google.com/open?id=1XTejPl3TZSHpT1OxdyGMQ4jSu-33r9Q5&usp=drive_fs
+  TW PDS: https://drive.google.com/open?id=1YPqPR86qhbIIAgS3pxI_ocvyvwWJaOaM&usp=drive_fs
+
+PT-5000 (Vinyl Composite Platinum Catalyst)
+  EN PDS: https://drive.google.com/open?id=1wG_GVqq3q1ychKpxawalBh7Y6ULtcGGY&usp=drive_fs
+  TW PDS: https://drive.google.com/open?id=1I6WQOGaj-R5mqZ5q0irA25zyKnVyBAO8&usp=drive_fs
+
+VL series (VL-100~VL-15000000, Vinyl Silicone Fluid)
+  EN PDS: https://drive.google.com/open?id=18jxmHhtDwmiGNRMPunQ1NVq63VY8xLys&usp=drive_fs
+  TW PDS: https://drive.google.com/open?id=1isCXEBbpchg1u8RpHIaUM3LJ9pt3y6YZ&usp=drive_fs
+
+SAF-260 (Polyether-based High-Temperature Shear-Resistant Defoamer)
+  EN PDS: https://drive.google.com/file/d/1XJwXbTqz4PY6nsl8W1Dh4Yoky_JOa5ou/view?usp=share_link
+  TW PDS: https://drive.google.com/file/d/1UETpSF4AdXrTcMA6vBy5Y_jt8TYB6yTx/view?usp=share_link
+
+LOH series (LOH-25 / LOH-50, Methyl Low Hydrogen Silicone Fluid)
+  EN PDS: https://drive.google.com/open?id=1Xz_uV4gRmVV_NEE-YCil0v2V_K2y9Hge&usp=drive_fs
+  TW PDS: https://drive.google.com/open?id=1d2WT9vY43JSEppLeL0JdcF3hPPU3k0lW&usp=drive_fs
+
+Note: The following products from the local PDS folder are 2026 "new products"
+not yet published on the taicounty.com.tw product catalog, so no PDF links
+were found for them: TTSRE, TCC-1027, TCC-588, RX-4055, RX-955, RX-755,
+RX-38 Series (RX-3811/3812/3815), GRX-3822, GREEN-2000, DF-4020.
